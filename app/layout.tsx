@@ -1,3 +1,7 @@
+import '@fortawesome/fontawesome-svg-core/styles.css'; // Importa los estilos de FontAwesome
+import { config } from '@fortawesome/fontawesome-svg-core'; // Importa la configuración de FontAwesome
+config.autoAddCss = false; // Desactiva la auto-adición de CSS
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";

@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -90,6 +93,24 @@ export default function Home() {
           </button>
         </form>
       </section>
+
+      {/* Footer Redes sociales */}
+      <footer className="bg-black text-white p-6 text-center">
+        <div className="flex justify-center space-x-6">
+        <a href="https://www.linkedin.com/in/erickmgr" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+         </a>
+        <a href="https://www.instagram.com/erck92?igshid=cDc0YW9pXzBz" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} size="2x" />
+        </a>
+        <a href="https://wa.me/message/SV76QYIB53HL0" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+          </a>
+          <a href="mailto:erck92@hotmail.com">
+          <FontAwesomeIcon icon={faEnvelope} size="2x" />
+         </a>
+        </div>
+      </footer>   
     </div>
   );
 }
