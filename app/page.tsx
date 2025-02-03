@@ -15,7 +15,10 @@ export default function Home() {
       </nav>
 
       {/* Sección de Encabezado */}
-      <div className="relative h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/cerrodelasilla.jpg')" }}>
+      <div
+        className="relative h-screen bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/cerrodelasilla.jpg')" }}
+      >
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 text-white">
           <h1 className="text-4xl font-bold">¡Hola, soy Erick!</h1>
           <p className="mt-4 text-lg text-gray-300">Bienvenido a mi sitio web.</p>
@@ -39,17 +42,17 @@ export default function Home() {
           <div className="bg-white shadow rounded p-4">
             <Image src="/acueductomonterrey.jpeg" alt="Proyecto 1" width={400} height={192} className="w-full h-auto object-cover rounded" />
             <h3 className="text-xl font-bold mt-4">Proyecto 1</h3>
-            <p className="text-gray-600 mt-2">Acueducto de acero de 84" de 4.0 km de longitud, Monterrey-Cerro Prieto.</p>
+            <p className="text-gray-600 mt-2">Acueducto de acero de 84&quot; de 4.0 km de longitud, Monterrey-Cerro Prieto.</p>
           </div>
           <div className="bg-white shadow rounded p-4">
             <Image src="/acueductoguadalajara.jpg" alt="Proyecto 2" width={400} height={192} className="w-full h-auto object-cover rounded" />
             <h3 className="text-xl font-bold mt-4">Proyecto 2</h3>
-            <p className="text-gray-600 mt-2">Acueducto de acero de 54" de 6.0 km de longitud, El Salto-Calderón.</p>
+            <p className="text-gray-600 mt-2">Acueducto de acero de 54&quot; de 6.0 km de longitud, El Salto-Calderón.</p>
           </div>
           <div className="bg-white shadow rounded p-4">
             <Image src="/tanqueeleden.jpg" alt="Proyecto 3" width={400} height={192} className="w-full h-auto object-cover rounded" />
             <h3 className="text-xl font-bold mt-4">Proyecto 3</h3>
-            <p className="text-gray-600 mt-2">Acueducto de acero de 30" de 42.0 km de longitud, Armería-Manzanillo.</p>
+            <p className="text-gray-600 mt-2">Acueducto de acero de 30&quot; de 42.0 km de longitud, Armería-Manzanillo.</p>
           </div>
         </div>
       </section>
@@ -79,24 +82,10 @@ export default function Home() {
       <section id="contact" className="mt-16 p-8 bg-gray-200 text-black">
         <h2 className="text-3xl font-bold mb-4 text-center">Contacto</h2>
         <form className="max-w-lg mx-auto space-y-4">
-          <input
-            type="text"
-            placeholder="Nombre"
-            className="w-full p-4 border border-gray-300 rounded"
-          />
-          <input
-            type="email"
-            placeholder="Correo electrónico"
-            className="w-full p-4 border border-gray-300 rounded"
-          />
-          <textarea
-            placeholder="Mensaje"
-            className="w-full p-4 border border-gray-300 rounded h-32"
-          ></textarea>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white py-4 rounded hover:bg-blue-600"
-          >
+          <input type="text" placeholder="Nombre" className="w-full p-4 border border-gray-300 rounded" />
+          <input type="email" placeholder="Correo electrónico" className="w-full p-4 border border-gray-300 rounded" />
+          <textarea placeholder="Mensaje" className="w-full p-4 border border-gray-300 rounded h-32"></textarea>
+          <button type="submit" className="w-full bg-blue-500 text-white py-4 rounded hover:bg-blue-600">
             Enviar
           </button>
         </form>
