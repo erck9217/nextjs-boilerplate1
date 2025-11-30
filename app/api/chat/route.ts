@@ -14,7 +14,7 @@ export async function POST(req: Request) {
         }
 
         const genAI = new GoogleGenerativeAI(apiKey);
-        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
         const result = await model.generateContent(mensaje);
         const response = await result.response;
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     } catch (error) {
         console.error("Error en chatbot:", error);
         return NextResponse.json(
-            { error: "Error al procesar la solicitud" },
+            { error: `Error al procesar la solicitud: ${error instanceof Error ? error.message : String(error)}` },
             { status: 500 }
         );
     }

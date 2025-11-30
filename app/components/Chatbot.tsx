@@ -36,7 +36,7 @@ export default function Chatbot() {
       const data = await res.json()
 
       if (data.error) {
-        setHistorial(prev => [...prev, { role: 'bot', content: "Lo siento, hubo un error al procesar tu mensaje." }])
+        setHistorial(prev => [...prev, { role: 'bot', content: `Error: ${data.error}` }])
       } else {
         setHistorial(prev => [...prev, { role: 'bot', content: data.respuesta }])
       }
