@@ -4,69 +4,75 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Proyectos",
   description:
-    "Portafolio de proyectos de infraestructura hidráulica y civil: acueductos, líneas de impulsión, pavimentación y obra pública de gran escala.",
+    "Portafolio de proyectos de infraestructura hidráulica y civil: acueductos, líneas de impulsión, drenaje y obra pública de gran escala.",
 };
 
 const proyectos = [
   {
-    titulo: "Reforzamiento Acueducto Cerro Prieto",
-    tag: "84\" Acero · $199M MXN",
-    img: "/acueductomonterrey.jpeg",
+    titulo: "Acueducto Armería–Manzanillo",
+    tag: "42 KM · ~$900M MXN",
+    img: "/tanqueeleden.jpg",
+    cliente: "ASIPONA",
     descripcion:
-      "Reforzamiento de 4,000 ml de tubería de acero de 2.13 m de diámetro. Proyecto de infraestructura hidráulica crítica para el suministro de agua potable en la zona metropolitana de Monterrey.",
-    escala: "$199,000,000 MXN",
-    tipo: "Infraestructura Hidráulica",
-    rol: "Superintendente de Obra",
+      "Construcción de acueducto nuevo de 42 km con tanque de almacenamiento. Proyecto de mayor escala personal: superintendencia de campo completa, toma de decisiones en sitio, cobro de extras y coordinación de equipos.",
+    escala: "42 km · Tanque de almacenamiento",
+    rol: "Superintendente de campo · ~200 personas",
+    tipo: "Acueducto",
   },
   {
     titulo: "Línea de Impulsión El Salto–Calderón",
-    tag: "54\" Acero · 6.8 KM",
+    tag: "~$500M MXN · Jalisco",
     img: "/acueductoguadalajara.jpg",
+    cliente: "CONAGUA",
     descripcion:
-      "Construcción de línea de impulsión de 6.8 km de tubería de acero de 54\" de diámetro. Obra de interconexión hidráulica entre sistemas de abastecimiento en el área metropolitana de Guadalajara.",
-    escala: "6.8 km lineales",
+      "Línea de impulsión + tanque de cambio de régimen. Participación clave en licitación: volumetrías, análisis de costos y documentación técnica. Coordinación remota durante ejecución.",
+    escala: "Línea de impulsión + tanque de régimen",
+    rol: "Licitación y coordinación remota",
     tipo: "Línea de Impulsión",
-    rol: "Control Administrativo",
   },
   {
-    titulo: "Acueducto Armería–Manzanillo",
-    tag: "42.0 KM · Colima",
-    img: "/tanqueeleden.jpg",
-    descripcion:
-      "Construcción de acueducto nuevo de 42 km con tanque de almacenamiento incluido. Proyecto de abastecimiento de agua potable para los municipios de Armería y Manzanillo, Colima.",
-    escala: "42 km · Tanque de almacenamiento",
-    tipo: "Acueducto",
-    rol: "Control de Obra",
-  },
-  {
-    titulo: "Reconstrucción Puente Vehicular Apodaca",
-    tag: "Obra Civil · $14M MXN",
-    img: "/cerrodelasilla.jpg",
-    descripcion:
-      "Reconstrucción completa de puente vehicular en el municipio de Apodaca, Nuevo León. Incluye estructura de concreto, acabados, señalización y obras complementarias.",
-    escala: "$14,000,000 MXN",
-    tipo: "Obra Civil",
-    rol: "Control Presupuestal",
-  },
-  {
-    titulo: "Rehabilitación Calle Apolo, Monterrey",
-    tag: "Pavimentación · $7M MXN",
+    titulo: "Reforzamiento Acueducto Cerro Prieto",
+    tag: "84\" Acero · ~$200M MXN",
     img: "/acueductomonterrey.jpeg",
+    cliente: "SADM",
     descripcion:
-      "Rehabilitación integral de pavimento en calle Apolo, Monterrey, N.L. Trabajos de bacheo, carpeta asfáltica, guarniciones, banquetas y señalización horizontal y vertical.",
-    escala: "$7,000,000 MXN",
-    tipo: "Pavimentación",
-    rol: "Estimaciones y Control",
+      "Reforzamiento de 4,000 ml de tubería de acero de 2.13 m de diámetro. Infraestructura hidráulica crítica para el suministro de agua potable en la zona metropolitana de Monterrey.",
+    escala: "4,000 ml · Tubería acero 84\"",
+    rol: "Responsable administrativo integral",
+    tipo: "Infraestructura Hidráulica",
+  },
+  {
+    titulo: "Drenaje Pluvial Concepción Barragán",
+    tag: "Ducto CR · ~$99M MXN",
+    img: "/cerrodelasilla.jpg",
+    cliente: "Municipio de Apodaca",
+    descripcion:
+      "Diseño y proyecto ejecutivo completo del sistema de drenaje pluvial: ducto de concreto reforzado más tubería aluminizada de 84\" de diámetro. Desarrollado en etapa de Secretaría de Obras Públicas.",
+    escala: "Ducto CR + tubería aluminizada 84\"",
+    rol: "Diseño completo (etapa SOP)",
+    tipo: "Drenaje Pluvial",
+  },
+  {
+    titulo: "Puente Arroyo El Infiernillo",
+    tag: "Obra Civil · ~$42M MXN",
+    img: "/cerrodelasilla.jpg",
+    cliente: "Municipio de Apodaca",
+    descripcion:
+      "Construcción de puente vehicular sobre Arroyo El Infiernillo en Apodaca, N.L. Control administrativo completo e intervención como firma de superintendente en etapas clave de la obra.",
+    escala: "~$42,000,000 MXN",
+    rol: "Administrativo + firma de superintendente",
+    tipo: "Obra Civil",
   },
   {
     titulo: "Ampliación Galerías Valle Oriente",
     tag: "Obra Privada · 3,000 m²",
     img: "/tanqueeleden.jpg",
+    cliente: "Postensa",
     descripcion:
       "Ampliación de 3,000 m² de losa en el centro comercial Galerías Valle Oriente, San Pedro Garza García, N.L. Coordinación de estructuras, instalaciones y acabados.",
     escala: "3,000 m² de losa",
+    rol: "Residente de obra · ~40 personas",
     tipo: "Obra Privada",
-    rol: "Administración de Obra",
   },
 ];
 
@@ -117,9 +123,12 @@ export default function Proyectos() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#2563EB] block mb-3">
                   {proyecto.tag}
                 </span>
-                <h2 className="text-lg font-bold text-white uppercase mb-3 leading-tight">
+                <h2 className="text-lg font-bold text-white uppercase mb-1 leading-tight">
                   {proyecto.titulo}
                 </h2>
+                <p className="text-[10px] uppercase tracking-widest text-[#64748B] mb-3 font-medium">
+                  Cliente: {proyecto.cliente}
+                </p>
                 <p className="text-[#64748B] text-xs leading-relaxed mb-6">
                   {proyecto.descripcion}
                 </p>

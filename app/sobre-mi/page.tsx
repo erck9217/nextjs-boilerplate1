@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Sobre mí",
   description:
-    "Ingeniero Civil con 10+ años en control de obra de infraestructura hidráulica. Especialista en estimaciones, presupuestos y gestión documental. En transición hacia BIM y Data Science.",
+    "Ingeniero Civil con 9+ años en control de obra de infraestructura hidráulica. Especialista en estimaciones, presupuestos y gestión documental. En transición hacia gerencia de proyectos con BIM y Data Science.",
 };
 
 const stats = [
-  { value: "10+", label: "Años en Control de Obra" },
-  { value: "$199M", label: "Proyecto máximo MXN" },
-  { value: "BIM", label: "Cert. Tec de Monterrey" },
-  { value: "Data", label: "Science Aplicado" },
+  { value: "9+", label: "Años de experiencia" },
+  { value: "$900M", label: "Proyecto máximo MXN" },
+  { value: "+$1,400M", label: "En licitaciones participadas" },
+  { value: "~200", label: "Personas coordinadas" },
 ];
 
 const habilidades = [
@@ -23,13 +23,15 @@ const habilidades = [
   "Precios Unitarios",
   "Control Presupuestal",
   "Facturación",
-  "QA / QC",
   "Gestión Documental",
-  "Revit",
-  "AutoCAD Civil 3D",
+  "Civil 3D",
+  "AutoCAD",
   "Neodata",
-  "Python",
+  "Autodesk Docs",
+  "Navisworks",
+  "Revit",
   "Power BI",
+  "Python",
 ];
 
 export default function SobreMi() {
@@ -52,34 +54,34 @@ export default function SobreMi() {
           {/* Bio */}
           <div className="md:col-span-3 space-y-6">
             <p className="text-[#e2e8f0] text-lg leading-relaxed">
-              Soy Ingeniero Civil con más de 10 años especializándome en el{" "}
-              <span className="text-white font-semibold">
-                control administrativo y financiero de proyectos de infraestructura hidráulica
-              </span>
-              : acueductos, drenaje y pavimentación. He trabajado como Superintendente en{" "}
-              <span className="text-white font-semibold">Huajuco Construcciones</span>, gestionando
-              proyectos de hasta{" "}
-              <span className="text-[#2563EB] font-bold">$199 millones MXN</span>.
+              Soy Ingeniero Civil con{" "}
+              <span className="text-white font-semibold">9+ años especializándome en control
+              administrativo de obra e infraestructura hidráulica</span> — acueductos,
+              drenaje y pavimentación. Desde 2019 en{" "}
+              <span className="text-white font-semibold">Huajuco Construcciones</span>, donde
+              he evolucionado de Control de Obra a{" "}
+              <span className="text-[#2563EB] font-bold">Superintendente y Líder de Implementación BIM</span>,
+              coordinando proyectos de hasta{" "}
+              <span className="text-[#2563EB] font-bold">~$900M MXN</span>.
             </p>
 
             <p className="text-[#64748B] leading-relaxed">
-              Mi fortaleza está en dominar el ciclo completo de control de obra desde el escritorio
-              y la sala de juntas:{" "}
+              Mi eje siempre ha sido el control desde el escritorio y la sala de juntas:{" "}
               <span className="text-[#94a3b8]">
                 análisis de precios unitarios, generadores de obra, control presupuestal,
-                seguimiento de estimaciones y gestión documental
+                seguimiento de estimaciones, cobro de extras y gestión documental
               </span>
-              . Conozco a fondo rendimientos, materiales y equipos — ese conocimiento técnico es
-              lo que le da precisión real a mis números.
+              . Conozco a fondo rendimientos, materiales y equipos — ese conocimiento técnico
+              es lo que le da precisión real a mis números.
             </p>
 
             <p className="text-[#64748B] leading-relaxed">
-              Hoy integro{" "}
-              <span className="text-white font-medium">metodología BIM</span> y{" "}
-              <span className="text-white font-medium">Data Science aplicado a construcción</span>{" "}
-              (Tecnológico de Monterrey) a esa base. El resultado: un perfil que puede gestionar
-              la complejidad financiera de un proyecto grande y, al mismo tiempo, modelarlo,
-              medirlo y comunicarlo con herramientas digitales de vanguardia.
+              Hoy lidero la implementación de{" "}
+              <span className="text-white font-medium">metodología BIM</span> en mi empresa
+              (Autodesk Docs, Navisworks, CDE) y curso activamente{" "}
+              <span className="text-white font-medium">Citizen Data Science</span>{" "}
+              en el Tecnológico de Monterrey. El objetivo: escalar hacia gerencia de proyectos
+              con dominio técnico, financiero y digital.
             </p>
 
             <div className="border-l-2 border-[#1E293B] pl-6 py-2">
@@ -87,6 +89,24 @@ export default function SobreMi() {
                 "La diferencia entre un proyecto que termina bien y uno que se sale de control
                 no está en el campo — está en la calidad del control administrativo."
               </p>
+            </div>
+
+            {/* Evolución del rol */}
+            <div className="border border-[#1E293B] p-6 space-y-3">
+              <p className="text-[10px] uppercase tracking-widest text-[#2563EB] font-bold mb-4">
+                Trayectoria en Huajuco Construcciones
+              </p>
+              {[
+                { periodo: "Mar 2025 – Actualidad", rol: "Superintendente / Líder de Control de Obra e Implementación BIM" },
+                { periodo: "Oct 2023 – Mar 2025", rol: "Superintendente de Obra — Acueducto Armería-Manzanillo, Colima" },
+                { periodo: "Oct 2020 – Oct 2023", rol: "Responsable Administrativo Senior — Proyectos de gran escala" },
+                { periodo: "Ago 2019 – Oct 2020", rol: "Control de Obra" },
+              ].map((item) => (
+                <div key={item.periodo} className="flex gap-4">
+                  <p className="text-[10px] text-[#64748B] w-36 flex-shrink-0 pt-0.5 font-mono">{item.periodo}</p>
+                  <p className="text-xs text-[#94a3b8]">{item.rol}</p>
+                </div>
+              ))}
             </div>
 
             <div className="flex flex-wrap gap-3 pt-4">
@@ -115,7 +135,7 @@ export default function SobreMi() {
                   key={stat.label}
                   className="bg-[#0a0a0a] border border-[#1E293B] p-8 flex flex-col justify-between"
                 >
-                  <p className="text-3xl font-black text-[#2563EB] tracking-tighter">
+                  <p className="text-2xl font-black text-[#2563EB] tracking-tighter">
                     {stat.value}
                   </p>
                   <p className="text-xs uppercase tracking-widest text-[#64748B] mt-3 font-bold">
@@ -148,38 +168,23 @@ export default function SobreMi() {
               </p>
               <div className="space-y-4">
                 {[
-                  {
-                    title: "BIM Profesional",
-                    org: "CMIC",
-                    year: "",
-                  },
-                  {
-                    title: "Administración de Obra",
-                    org: "Tecnológico de Monterrey",
-                    year: "",
-                  },
-                  {
-                    title: "Neodata Avanzado",
-                    org: "CMIC",
-                    year: "",
-                  },
-                  {
-                    title: "Data Science Aplicado a Construcción",
-                    org: "Tecnológico de Monterrey",
-                    year: "2024",
-                  },
-                  {
-                    title: "Ingeniería Civil",
-                    org: "Universidad",
-                    year: "",
-                  },
+                  { title: "Citizen Data Science aplicado a Construcción", org: "Tec de Monterrey", note: "En curso" },
+                  { title: "Metodología BIM", org: "CMIC", note: "En proceso" },
+                  { title: "Diplomado en Administración de Obra", org: "TEC / CMIC", note: "" },
+                  { title: "Diplomado en Precios Unitarios", org: "CMIC", note: "" },
+                  { title: "Neodata Avanzado", org: "CMIC", note: "" },
+                  { title: "Diplomado Tecnología del Concreto", org: "CEMEX", note: "" },
                 ].map((item) => (
                   <div key={item.title} className="border-l border-[#1E293B] pl-4">
-                    <p className="text-sm text-white font-medium">{item.title}</p>
-                    <p className="text-xs text-[#64748B]">
-                      {item.org}
-                      {item.year ? ` · ${item.year}` : ""}
-                    </p>
+                    <div className="flex items-center gap-2">
+                      <p className="text-sm text-white font-medium">{item.title}</p>
+                      {item.note && (
+                        <span className="text-[9px] uppercase tracking-widest text-[#2563EB] border border-[#2563EB]/30 px-1.5 py-0.5">
+                          {item.note}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-xs text-[#64748B]">{item.org}</p>
                   </div>
                 ))}
               </div>

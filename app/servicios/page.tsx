@@ -24,7 +24,7 @@ const servicios = [
     numero: "02",
     titulo: "Estimaciones y Precios Unitarios",
     descripcion:
-      "Análisis de precios unitarios detallados con rendimientos reales de campo. Generadores de obra, cómputos métricos y conciliaciones. Experiencia en proyectos de hasta $199 millones MXN bajo normas CONAGUA y SCT.",
+      "Análisis de precios unitarios detallados con rendimientos reales de campo. Generadores de obra, cómputos métricos y conciliaciones. Experiencia en proyectos de hasta $900M MXN bajo normas CONAGUA y SCT.",
     entregables: [
       "Análisis de precios unitarios",
       "Generadores de obra",
@@ -48,7 +48,7 @@ const servicios = [
     numero: "04",
     titulo: "Modelado BIM",
     descripcion:
-      "Creación y coordinación de modelos BIM para infraestructura civil en Revit. Detección de interferencias, extracción de cantidades automatizada y flujos de trabajo colaborativos. Alineado con estándares ISO 19650.",
+      "Implementación y coordinación de entornos BIM en empresa constructora. Liderazgo de adopción de CDE (Autodesk Docs), coordinación de modelos en Navisworks y estructuración de flujos de trabajo colaborativos entre oficina y campo.",
     entregables: [
       "Modelo BIM LOD 300-400",
       "Detección de interferencias",
@@ -60,7 +60,7 @@ const servicios = [
     numero: "05",
     titulo: "Análisis de Datos",
     descripcion:
-      "Aplicación de Data Science al control de obra: dashboards de avance en Power BI, análisis de costos con Python, detección de desviaciones y reportes basados en datos para la toma de decisiones ejecutivas.",
+      "Aplicación de principios de Data Science al control de obra: dashboards de avance en Power BI, análisis exploratorio con Python (en formación activa, Tec de Monterrey). Orientado a visibilidad de costos y detección temprana de desviaciones.",
     entregables: [
       "Dashboards Power BI",
       "Scripts Python para análisis",
