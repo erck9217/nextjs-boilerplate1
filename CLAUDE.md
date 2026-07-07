@@ -7,7 +7,7 @@ Posicionamiento profesional dual:
 - Ofrecer consultoría y servicios freelance
 
 ## Perfil del dueño
-Ingeniero Civil con 10+ años de experiencia especializado en:
+Ingeniero Civil con 9+ años de experiencia especializado en:
 - Control administrativo de obra (estimaciones, precios unitarios, 
   control presupuestal, facturación, gestión documental)
 - Infraestructura hidráulica: acueductos, drenaje, tanques, pavimentación
@@ -58,20 +58,26 @@ NO es una single-page app con anclas — cada sección es una ruta propia.
   nav derecha con `next/link`. Marca la ruta activa.
 - `Footer.tsx` — 3 columnas: contacto+redes / nav rápida / certificaciones.
   Copyright centrado al fondo.
-- `ContactForm.tsx` — Formulario Formspree, se usa en `/contacto`
-- `Chatbot.tsx` — Existente, sin cambios
+- `ContactForm.tsx` — Formulario Formspree, se usa en `/contacto`.
+  Estilo dark del sitio (inputs negros, borde #1E293B, botón azul #2563EB)
 
 ### Layout global (app/layout.tsx)
 Incluye `<Header />` y `<Footer />` globales.
 El `<main>` envuelve el `{children}`.
 
-## Proyectos reales para mostrar
-- Reforzamiento acueducto Cerro Prieto: 4,000 ml tubería acero 2.13m diámetro, $199M MXN
-- Línea de impulsión El Salto-Calderón: 6.8 km, tubería acero 54"
-- Acueducto Armería-Manzanillo: 42 km + tanque de almacenamiento
-- Reconstrucción puente vehicular Apodaca: $14M MXN
-- Rehabilitación calle Apolo, Monterrey: $7M MXN
-- Ampliación Galerías Valle Oriente: 3,000 m² de losa
+## Proyectos reales para mostrar (datos correctos, implementados en /proyectos)
+- Acueducto Armería–Manzanillo (ASIPONA): 42 km + tanque de almacenamiento,
+  ~$900M MXN, superintendente de campo, ~200 personas
+- Línea de Impulsión El Salto–Calderón (CONAGUA), Jalisco: ~$500M MXN,
+  licitación y coordinación remota
+- Reforzamiento Acueducto Cerro Prieto (SADM): 4,000 ml tubería acero 84"
+  (2.13 m diámetro), ~$200M MXN, responsable administrativo integral
+- Drenaje Pluvial Concepción Barragán (Mpio. Apodaca): ducto CR + tubería
+  aluminizada 84", ~$99M MXN, diseño completo en etapa SOP
+- Puente Arroyo El Infiernillo (Mpio. Apodaca): ~$42M MXN,
+  administrativo + firma de superintendente
+- Ampliación Galerías Valle Oriente (Postensa): 3,000 m² de losa,
+  residente de obra, ~40 personas
 
 ## Imágenes disponibles en /public
 - `cerrodelasilla.jpg` — usada en Hero y proyectos
@@ -79,6 +85,7 @@ El `<main>` envuelve el `{children}`.
 - `acueductoguadalajara.jpg` — proyecto El Salto-Calderón
 - `tanqueeleden.jpg` — proyecto Armería-Manzanillo
 - `logo.webp` — logo del sitio
+- `og.jpg` — imagen OpenGraph 1200×630 para vista previa al compartir en redes
 
 ## Certificaciones (datos correctos)
 - BIM Profesional → CMIC
