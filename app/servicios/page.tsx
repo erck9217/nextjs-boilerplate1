@@ -43,14 +43,14 @@ const servicios = [
   },
   {
     numero: "03",
-    titulo: "QA / QC",
+    titulo: "Gestión de Calidad Documental",
     descripcion:
-      "Verificación rigurosa de normas y especificaciones técnicas en infraestructura hidráulica y civil. Elaboración de registros de calidad, pruebas hidrostáticas, supervisión de materiales y cumplimiento de especificaciones SCT y CONAGUA.",
+      "Integración y control de la documentación de calidad del proyecto: certificados, pruebas de laboratorio, reportes fotográficos y bitácoras electrónicas. Trazabilidad completa para el cierre administrativo y la entrega-recepción bajo normas SCT y CONAGUA.",
     entregables: [
-      "Registros de calidad",
-      "Pruebas hidrostáticas",
-      "Supervisión de materiales",
-      "Dossier de calidad",
+      "Integración de dossier de calidad",
+      "Gestión de bitácoras electrónicas (SADM)",
+      "Control documental de fianzas, seguros y convenios",
+      "Trazabilidad para cierre y entrega-recepción",
     ],
   },
   {
@@ -69,9 +69,9 @@ const servicios = [
     numero: "05",
     titulo: "Análisis de Datos",
     descripcion:
-      "Aplicación de principios de Data Science al control de obra: dashboards de avance en Power BI, análisis exploratorio con Python (en formación activa, Tec de Monterrey). Orientado a visibilidad de costos y detección temprana de desviaciones.",
+      "Aplicación de principios de Data Science al control de obra: dashboards de control de costos en Excel avanzado y análisis exploratorio con Python (en formación — Citizen Data Science, Tec de Monterrey). Orientado a visibilidad de costos y detección temprana de desviaciones.",
     entregables: [
-      "Dashboards Power BI",
+      "Dashboards de costos en Excel avanzado",
       "Scripts Python para análisis",
       "Reportes ejecutivos con datos",
       "Alertas de desviación de costo",

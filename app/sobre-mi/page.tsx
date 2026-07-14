@@ -39,7 +39,7 @@ const habilidades = [
   "Autodesk Docs",
   "Navisworks",
   "Revit",
-  "Power BI",
+  "Excel Avanzado",
   "Python",
 ];
 
