@@ -38,6 +38,63 @@ export default function Contacto() {
           </h1>
         </div>
 
+        {/* CTA diferenciado por público */}
+        <div className="grid md:grid-cols-2 gap-1 mb-16">
+          {/* Bloque 1 — reclutadores */}
+          <div className="bg-[#0a0a0a] border border-[#1E293B] p-8 hover:border-[#2563EB] transition-colors flex flex-col">
+            <p className="text-[10px] uppercase tracking-widest text-[#2563EB] font-bold mb-4">
+              Para empresas
+            </p>
+            <h2 className="text-xl font-bold text-white mb-3 leading-snug">
+              ¿Buscas talento para tu empresa?
+            </h2>
+            <p className="text-sm text-[#64748B] leading-relaxed mb-6 flex-1">
+              Perfil disponible para roles de control de obra, coordinación y gerencia de
+              proyectos en infraestructura.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="/cv/CV_Erick_Garcia_Reyna.pdf"
+                download
+                aria-label="Descargar CV en PDF"
+                className="inline-flex items-center gap-2 bg-[#2563EB] px-5 py-3 text-xs font-bold uppercase tracking-widest text-white hover:bg-[#1d4ed8] transition-all"
+              >
+                Descargar CV ↓
+              </a>
+              <a
+                href="https://linkedin.com/in/erickmgr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-[#1E293B] px-5 py-3 text-xs font-bold uppercase tracking-widest text-[#64748B] hover:border-[#2563EB] hover:text-white transition-all"
+              >
+                Ver LinkedIn
+              </a>
+            </div>
+          </div>
+
+          {/* Bloque 2 — consultoría */}
+          <div className="bg-[#0a0a0a] border border-[#1E293B] p-8 hover:border-[#2563EB] transition-colors flex flex-col">
+            <p className="text-[10px] uppercase tracking-widest text-[#2563EB] font-bold mb-4">
+              Para tu proyecto
+            </p>
+            <h2 className="text-xl font-bold text-white mb-3 leading-snug">
+              ¿Necesitas apoyo en control de obra?
+            </h2>
+            <p className="text-sm text-[#64748B] leading-relaxed mb-6 flex-1">
+              Consultoría en estimaciones, precios unitarios, volumetrías en Civil 3D e
+              implementación BIM.
+            </p>
+            <div>
+              <a
+                href="#formulario"
+                className="inline-flex items-center gap-2 bg-[#2563EB] px-5 py-3 text-xs font-bold uppercase tracking-widest text-white hover:bg-[#1d4ed8] transition-all"
+              >
+                Enviar mensaje ↓
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-16">
 
           {/* Info izquierda */}
@@ -112,7 +169,7 @@ export default function Contacto() {
           </div>
 
           {/* Formulario derecha */}
-          <div className="border border-[#1E293B] p-px">
+          <div id="formulario" className="border border-[#1E293B] p-px scroll-mt-24">
             <div className="bg-[#0a0a0a] p-8 h-full">
               <p className="text-xs font-bold tracking-[0.3em] uppercase text-[#64748B] mb-8">
                 Enviar mensaje
