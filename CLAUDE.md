@@ -48,9 +48,20 @@ NO es una single-page app con anclas — cada sección es una ruta propia.
   subtítulo, dos botones (Ver proyectos / Contacto)
 - `/sobre-mi` — Perfil profesional, bio, stats, habilidades, 
   formación y certificaciones
-- `/proyectos` — Los 6 proyectos reales con imagen, escala, rol e impacto
+- `/proyectos` — Los 6 proyectos reales con imagen, escala, rol e impacto.
+  Los 3 de mayor escala enlazan a su ficha ("Ver caso completo →")
+- `/proyectos/[slug]` — Ficha individual (SSG) de los 3 proyectos grandes,
+  con narrativa reto → decisiones → resultados. Slugs:
+  `acueducto-armeria-manzanillo`, `linea-impulsion-el-salto-calderon`,
+  `acueducto-cerro-prieto`
 - `/servicios` — 5 especialidades con entregables + CTA al contacto
 - `/contacto` — Datos de contacto + formulario Formspree
+
+### Datos de proyectos (fuente única)
+- `app/data/proyectos.ts` — array `proyectos` que alimenta tanto las
+  tarjetas de `/proyectos` como las fichas `/proyectos/[slug]`.
+  Cada proyecto tiene `slug`, `imagen` (independiente) y opcionalmente
+  `ficha` (solo los 3 grandes). Editar contenido de proyectos SOLO aquí.
 
 ### Componentes compartidos (en app/components/)
 - `Header.tsx` — Fijo en la parte superior. Transparente en `/`, 
@@ -86,6 +97,9 @@ El `<main>` envuelve el `{children}`.
 - `tanqueeleden.jpg` — proyecto Armería-Manzanillo
 - `logo.webp` — logo del sitio
 - `og.jpg` — imagen OpenGraph 1200×630 para vista previa al compartir en redes
+- `/public/proyectos/` — fotos reales de obra (una por slug). Ver
+  `public/proyectos/README.md` para la convención de nombres. Al subir
+  una foto, actualizar solo el campo `imagen` en `app/data/proyectos.ts`
 
 ## Certificaciones (datos correctos)
 - BIM Profesional → CMIC
