@@ -4,7 +4,16 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Servicios",
   description:
-    "Servicios de control de obra, estimaciones y precios unitarios, QA/QC, modelado BIM y análisis de datos para proyectos de infraestructura civil.",
+    "Consultoría en control de costos, estimaciones, análisis de precios unitarios, volumetrías en Civil 3D e implementación BIM para constructoras.",
+  alternates: { canonical: "/servicios" },
+  openGraph: {
+    type: "website",
+    url: "https://ingerickgarcia.com/servicios",
+    title: "Servicios | Erick García",
+    description:
+      "Consultoría en control de costos, estimaciones, análisis de precios unitarios, volumetrías en Civil 3D e implementación BIM para constructoras.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Erick García – Control de Obra" }],
+  },
 };
 
 const servicios = [

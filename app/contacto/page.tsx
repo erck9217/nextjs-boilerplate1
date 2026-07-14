@@ -4,7 +4,16 @@ import ContactForm from "../components/ContactForm";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Contacta a Erick García para proyectos de control de obra, estimaciones, BIM o análisis de datos. Disponible para empleo y consultoría freelance.",
+    "Contacto profesional para oportunidades laborales y consultoría en control de obra e infraestructura hidráulica.",
+  alternates: { canonical: "/contacto" },
+  openGraph: {
+    type: "website",
+    url: "https://ingerickgarcia.com/contacto",
+    title: "Contacto | Erick García",
+    description:
+      "Contacto profesional para oportunidades laborales y consultoría en control de obra e infraestructura hidráulica.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Erick García – Control de Obra" }],
+  },
 };
 
 const datosContacto = [

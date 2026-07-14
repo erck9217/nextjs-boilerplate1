@@ -4,7 +4,16 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Proyectos",
   description:
-    "Portafolio de proyectos de infraestructura hidráulica y civil: acueductos, líneas de impulsión, drenaje y obra pública de gran escala.",
+    "Acueductos, líneas de impulsión, drenaje pluvial y obra civil: proyectos de hasta $900M MXN con SADM, CONAGUA, ASIPONA y municipios.",
+  alternates: { canonical: "/proyectos" },
+  openGraph: {
+    type: "website",
+    url: "https://ingerickgarcia.com/proyectos",
+    title: "Proyectos | Erick García",
+    description:
+      "Acueductos, líneas de impulsión, drenaje pluvial y obra civil: proyectos de hasta $900M MXN con SADM, CONAGUA, ASIPONA y municipios.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Erick García – Control de Obra" }],
+  },
 };
 
 const proyectos = [

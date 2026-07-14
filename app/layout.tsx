@@ -17,17 +17,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://ingerickgarcia.com'),
   title: {
-    default: 'Erick García | Control de Obra',
+    default: 'Erick García | Control de Obra e Infraestructura Hidráulica',
     template: '%s | Erick García'
   },
   description:
-    'Gestión y control de obra especializada en acueductos y urbanización. Estimaciones, programación y QA/QC con entregas claras en costo, plazo y calidad.',
+    'Ingeniero Civil especializado en control administrativo de obra: estimaciones, precios unitarios y gestión de proyectos hidráulicos de gran escala en México.',
   openGraph: {
     type: 'website',
     url: 'https://ingerickgarcia.com',
-    title: 'Erick García | Control de Obra',
+    title: 'Erick García | Control de Obra e Infraestructura Hidráulica',
     description:
-      'Gestión y control de obra con enfoque en proyectos hidráulicos y urbanos en México.',
+      'Ingeniero Civil especializado en control administrativo de obra: estimaciones, precios unitarios y gestión de proyectos hidráulicos de gran escala en México.',
     images: [
       {
         url: '/og.jpg',

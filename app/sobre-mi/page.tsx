@@ -4,7 +4,16 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Sobre mí",
   description:
-    "Ingeniero Civil con 9+ años en control de obra de infraestructura hidráulica. Especialista en estimaciones, presupuestos y gestión documental. En transición hacia gerencia de proyectos con BIM y Data Science.",
+    "Trayectoria de 9+ años en control de obra e infraestructura hidráulica. Superintendencia de campo, licitaciones ganadas por +$1,400M MXN e implementación BIM.",
+  alternates: { canonical: "/sobre-mi" },
+  openGraph: {
+    type: "website",
+    url: "https://ingerickgarcia.com/sobre-mi",
+    title: "Sobre mí | Erick García",
+    description:
+      "Trayectoria de 9+ años en control de obra e infraestructura hidráulica. Superintendencia de campo, licitaciones ganadas por +$1,400M MXN e implementación BIM.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Erick García – Control de Obra" }],
+  },
 };
 
 const stats = [
