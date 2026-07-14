@@ -120,6 +120,14 @@ export default function SobreMi() {
 
             <div className="flex flex-wrap gap-3 pt-4">
               <a
+                href="/cv/CV_Erick_Garcia_Reyna.pdf"
+                download
+                aria-label="Descargar CV en PDF"
+                className="inline-flex items-center gap-2 border border-[#2563EB] px-6 py-3 text-xs font-bold uppercase tracking-widest text-white hover:bg-[#2563EB] transition-all"
+              >
+                Descargar CV ↓
+              </a>
+              <a
                 href="https://linkedin.com/in/erickmgr/"
                 target="_blank"
                 rel="noopener noreferrer"

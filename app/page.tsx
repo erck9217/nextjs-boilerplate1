@@ -46,6 +46,15 @@ export default function Home() {
             Contacto
           </Link>
         </div>
+
+        <a
+          href="/cv/CV_Erick_Garcia_Reyna.pdf"
+          download
+          aria-label="Descargar CV en PDF"
+          className="mt-8 text-[10px] font-medium uppercase tracking-[0.3em] text-[#64748B] hover:text-white transition-colors"
+        >
+          Descargar CV ↓
+        </a>
       </div>
 
       {/* Indicador scroll */}
