@@ -9,7 +9,7 @@ Posicionamiento profesional dual:
 ## Perfil del dueño
 Ingeniero Civil con 11+ años en infraestructura (desde 2015) especializado en:
 - Control administrativo de obra (estimaciones, precios unitarios, 
-  control presupuestal, facturación, gestión documental)
+  control presupuestal, gestión documental)
 - Infraestructura hidráulica: acueductos, drenaje, tanques, pavimentación
 - Actualmente en transición activa hacia BIM y Data Science aplicado 
   a construcción (Tec de Monterrey)
@@ -80,7 +80,8 @@ El `<main>` envuelve el `{children}`.
 - Acueducto Armería–Manzanillo (ASIPONA): 42 km + tanque de almacenamiento,
   ~$900M MXN, superintendente de campo, ~200 personas
 - Línea de Impulsión El Salto–Calderón (CONAGUA), Jalisco: ~$500M MXN,
-  licitación y coordinación remota
+  licitación; en ejecución, firma de superintendente y control de
+  calidad (coordinación remota)
 - Reforzamiento Acueducto Cerro Prieto (SADM): 4,000 ml tubería acero 84"
   (2.13 m diámetro), ~$200M MXN, responsable administrativo integral
 - Drenaje Pluvial Concepción Barragán (Mpio. Apodaca): ducto CR + tubería

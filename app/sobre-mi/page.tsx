@@ -31,7 +31,6 @@ const habilidades = [
   "Estimaciones",
   "Precios Unitarios",
   "Control Presupuestal",
-  "Facturación",
   "Gestión Documental",
   "Civil 3D",
   "AutoCAD",

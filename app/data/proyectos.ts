@@ -71,14 +71,14 @@ export const proyectos: Proyecto[] = [
     imagen: "/acueductoguadalajara.jpg",
     cliente: "CONAGUA",
     descripcion:
-      "Línea de impulsión + tanque de cambio de régimen. Participación clave en licitación: volumetrías, análisis de costos y documentación técnica. Coordinación remota durante ejecución.",
+      "Línea de impulsión + tanque de cambio de régimen. Participación clave en licitación: volumetrías, análisis de costos y documentación técnica. Durante la ejecución, firma como superintendente y control de calidad, coordinado de forma remota.",
     escala: "Línea de impulsión + tanque de régimen",
-    rol: "Licitación y coordinación remota",
+    rol: "Licitación · firma de superintendente · calidad",
     tipo: "Línea de Impulsión",
     ficha: {
       datos: [
         { label: "Alcance", valor: "Línea de impulsión + tanque de régimen" },
-        { label: "Rol", valor: "Licitación + coordinación remota" },
+        { label: "Rol", valor: "Licitación + superintendente (firma) a cargo de calidad" },
         { label: "Monto", valor: "~$500M MXN — licitación ganada" },
         { label: "Cliente", valor: "CONAGUA, Jalisco" },
       ],
@@ -89,13 +89,12 @@ export const proyectos: Proyecto[] = [
       decisiones: [
         "Elaboración de volumetrías y análisis de costos para la propuesta",
         "Integración de la documentación técnica de la licitación",
-        "Coordinación remota durante la ejecución",
-        "Seguimiento financiero y reportes a dirección",
-        "Control de calidad documental de juntas soldadas y avances",
+        "Firma como superintendente del proyecto, con coordinación remota",
+        "Control de calidad de la obra, incluida la documentación de juntas soldadas",
       ],
       resultados: [
         "Licitación adjudicada (~$500M MXN).",
-        "Seguimiento financiero y reportes de avance sostenidos de forma remota durante la ejecución.",
+        "Control de calidad de la obra llevado de forma remota durante la ejecución.",
       ],
     },
   },
@@ -165,7 +164,7 @@ export const proyectos: Proyecto[] = [
     imagen: "/tanqueeleden.jpg",
     cliente: "Postensa",
     descripcion:
-      "Residencia de obra en la franja de hotel de la ampliación de Galerías Valle Oriente: de la cimentación en sótano 4 a los colados de losa, con ciclos de 10 días por nivel de 1,000 m² y participación en ~3,000 m² de losa.",
+      "Residencia de obra en la franja de hotel de la ampliación de Galerías Valle Oriente, en Monterrey, N.L.: de la cimentación en sótano 4 a los colados de losa, con ciclos de 10 días por nivel de 1,000 m² y participación en ~3,000 m² de losa.",
     escala: "3,000 m² de losa",
     rol: "Residente de obra · ~40 personas",
     tipo: "Obra Privada",
