@@ -70,13 +70,13 @@ export default function Footer() {
           {/* Columna derecha: certificaciones */}
           <div className="space-y-4">
             <p className="text-xs font-bold tracking-[0.3em] uppercase text-[#64748B]">
-              Certificaciones
+              Formación
             </p>
             <div className="space-y-3">
               {[
-                { name: "BIM Profesional", org: "CMIC" },
+                { name: "Diplomado en Administración de Obra", org: "TEC / CMIC" },
                 { name: "Neodata Avanzado", org: "CMIC" },
-                { name: "Admin. de Obra", org: "Tec de Monterrey" },
+                { name: "Metodología BIM", org: "CMIC · En proceso" },
               ].map((cert) => (
                 <div key={cert.name} className="border-l border-[#1E293B] pl-4">
                   <p className="text-sm text-white font-medium">{cert.name}</p>

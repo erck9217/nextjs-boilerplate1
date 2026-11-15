@@ -21,7 +21,7 @@ const servicios = [
     numero: "01",
     titulo: "Control de Obra",
     descripcion:
-      "Gestión técnica de avances físicos y financieros con metodologías de precisión. Seguimiento de partidas, programas de obra, control de rendimientos y reportes periódicos al cliente. Dominio total del ciclo desde la estimación hasta el cierre.",
+      "Llevo el control físico y financiero de la obra de principio a fin: estimaciones, seguimiento del programa, conciliaciones con el cliente y cierre administrativo. Es lo que hago desde 2019 en obras para SADM, CONAGUA y ASIPONA; hoy coordino a un equipo de tres analistas de control de obra.",
     entregables: [
       "Reportes de avance físico-financiero",
       "Control de estimaciones",
@@ -33,48 +33,48 @@ const servicios = [
     numero: "02",
     titulo: "Estimaciones y Precios Unitarios",
     descripcion:
-      "Análisis de precios unitarios detallados con rendimientos reales de campo. Generadores de obra, cómputos métricos y conciliaciones. Experiencia en proyectos de hasta $900M MXN bajo normas CONAGUA y SCT.",
+      "Análisis de precios unitarios en Neodata con rendimientos que conozco de campo, generadores y volumetrías. Incluye el soporte y cobro de extraordinarios: en el Acueducto Armería–Manzanillo (~$900M MXN) se cobró la totalidad de las extras. Obra hidráulica bajo normativa CONAGUA y pavimentos bajo normativa SCT.",
     entregables: [
       "Análisis de precios unitarios",
       "Generadores de obra",
-      "Presupuesto base y comparativo",
-      "Cómputos métricos",
+      "Volumetrías en Civil 3D",
+      "Soporte de conceptos extraordinarios",
     ],
   },
   {
     numero: "03",
-    titulo: "Gestión de Calidad Documental",
+    titulo: "Gestión Documental",
     descripcion:
-      "Integración y control de la documentación de calidad del proyecto: certificados, pruebas de laboratorio, reportes fotográficos y bitácoras electrónicas. Trazabilidad completa para el cierre administrativo y la entrega-recepción bajo normas SCT y CONAGUA.",
+      "Integro y mantengo al día el expediente de la obra: certificados de calidad, pruebas de laboratorio, reportes fotográficos, fianzas, seguros, convenios y bitácora electrónica. El objetivo es que el cierre administrativo y la entrega-recepción no se detengan por un documento faltante.",
     entregables: [
-      "Integración de dossier de calidad",
+      "Expediente de calidad integrado",
       "Gestión de bitácoras electrónicas (SADM)",
       "Control documental de fianzas, seguros y convenios",
-      "Trazabilidad para cierre y entrega-recepción",
+      "Expediente para cierre y entrega-recepción",
     ],
   },
   {
     numero: "04",
-    titulo: "Modelado BIM",
+    titulo: "Implementación BIM",
     descripcion:
-      "Implementación y coordinación de entornos BIM en empresa constructora. Liderazgo de adopción de CDE (Autodesk Docs), coordinación de modelos en Navisworks y estructuración de flujos de trabajo colaborativos entre oficina y campo.",
+      "Acompaño a constructoras que quieren empezar con BIM: documento de implementación, entorno común de datos (CDE), flujos de trabajo entre oficina y campo, y seguimiento. Es el proceso que lidero actualmente en Huajuco Construcciones con la suite Autodesk. Mi enfoque es la implementación y la coordinación, no la producción de modelos de alto detalle.",
     entregables: [
-      "Modelo BIM LOD 300-400",
-      "Detección de interferencias",
-      "Extracción de cantidades",
-      "Planos constructivos desde modelo",
+      "Documento de implementación BIM",
+      "Estructura del entorno común de datos (CDE)",
+      "Flujos de trabajo oficina–campo",
+      "Revisión de modelos en Navisworks",
     ],
   },
   {
     numero: "05",
     titulo: "Análisis de Datos",
     descripcion:
-      "Aplicación de principios de Data Science al control de obra: dashboards de control de costos en Excel avanzado y análisis exploratorio con Python (en formación — Citizen Data Science, Tec de Monterrey). Orientado a visibilidad de costos y detección temprana de desviaciones.",
+      "Tableros de control de costos en Excel avanzado y análisis exploratorio con Python para ver a tiempo dónde se está desviando una obra. Python lo estoy desarrollando en el programa Citizen Data Science del Tec de Monterrey, así que hoy lo ofrezco como complemento del control de obra.",
     entregables: [
       "Dashboards de costos en Excel avanzado",
-      "Scripts Python para análisis",
-      "Reportes ejecutivos con datos",
-      "Alertas de desviación de costo",
+      "Análisis exploratorio en Python",
+      "Reportes ejecutivos",
+      "Seguimiento de desviaciones de costo",
     ],
   },
 ];
@@ -85,16 +85,13 @@ export default function Servicios() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Encabezado */}
-        <div className="mb-16 border-l-4 border-[#2563EB] pl-8">
-          <p className="text-xs font-bold tracking-[0.3em] uppercase text-[#2563EB] mb-2">
-            Especialidades
-          </p>
+        <div className="mb-16">
           <h1 className="text-5xl font-bold tracking-tight text-white">
             Servicios
           </h1>
           <p className="mt-4 text-[#64748B] max-w-xl">
-            Control técnico y financiero de proyectos de infraestructura civil, con integración
-            de herramientas digitales de vanguardia.
+            Control de obra, precios unitarios e implementación BIM para constructoras,
+            por proyecto o como apoyo continuo.
           </p>
         </div>
 
@@ -149,16 +146,16 @@ export default function Servicios() {
         {/* CTA */}
         <div className="mt-16 border border-[#1E293B] p-12 text-center">
           <p className="text-[#64748B] text-sm mb-2 uppercase tracking-widest">
-            ¿Listo para hablar de tu proyecto?
+            ¿Tienes una obra en curso o una licitación en puerta?
           </p>
           <h2 className="text-3xl font-bold text-white mb-8">
-            Solicita una consulta
+            Cuéntame qué necesitas
           </h2>
           <Link
             href="/contacto"
             className="inline-block bg-[#2563EB] px-12 py-4 text-xs font-bold uppercase tracking-widest text-white hover:bg-[#1d4ed8] transition-all"
           >
-            Contactar ahora
+            Ir a contacto
           </Link>
         </div>
       </div>

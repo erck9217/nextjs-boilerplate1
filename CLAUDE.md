@@ -7,7 +7,7 @@ Posicionamiento profesional dual:
 - Ofrecer consultoría y servicios freelance
 
 ## Perfil del dueño
-Ingeniero Civil con 9+ años de experiencia especializado en:
+Ingeniero Civil con 11+ años en infraestructura (desde 2015) especializado en:
 - Control administrativo de obra (estimaciones, precios unitarios, 
   control presupuestal, facturación, gestión documental)
 - Infraestructura hidráulica: acueductos, drenaje, tanques, pavimentación
@@ -102,7 +102,7 @@ El `<main>` envuelve el `{children}`.
   una foto, actualizar solo el campo `imagen` en `app/data/proyectos.ts`
 
 ## Certificaciones (datos correctos)
-- BIM Profesional → CMIC
+- Metodología BIM → CMIC (EN PROCESO — no presentarla como obtenida)
 - Administración de Obra → Tecnológico de Monterrey
 - Neodata Avanzado → CMIC
 - Data Science Aplicado a Construcción → Tecnológico de Monterrey
@@ -129,7 +129,7 @@ El `<main>` envuelve el `{children}`.
   links LinkedIn y GitHub
 - Columna centro: navegación rápida (Sobre mí, Proyectos, 
   Servicios, Contacto)
-- Columna derecha: certificaciones (BIM CMIC, Neodata CMIC, 
-  Admin Obra Tec MTY)
+- Columna derecha: formación (Diplomado Admin. de Obra TEC/CMIC, Neodata CMIC,
+  Metodología BIM en proceso)
 - Inferior: copyright centrado en gris secundario
 - Sin colores llamativos, sobrio y limpio

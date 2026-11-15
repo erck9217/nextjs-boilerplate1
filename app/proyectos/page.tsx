@@ -24,16 +24,13 @@ export default function Proyectos() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Encabezado */}
-        <div className="mb-16 border-l-4 border-[#2563EB] pl-8">
-          <p className="text-xs font-bold tracking-[0.3em] uppercase text-[#2563EB] mb-2">
-            Portafolio
-          </p>
+        <div className="mb-16">
           <h1 className="text-5xl font-bold tracking-tight text-white">
             Proyectos
           </h1>
           <p className="mt-4 text-[#64748B] max-w-xl">
-            Infraestructura de gran escala ejecutada con control administrativo riguroso y
-            precisión técnica.
+            Seis obras en las que he participado desde 2015: acueductos, drenaje pluvial,
+            un puente y obra privada, para SADM, CONAGUA, ASIPONA y el Municipio de Apodaca.
           </p>
         </div>
 

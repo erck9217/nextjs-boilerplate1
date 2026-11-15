@@ -29,10 +29,7 @@ export default function Contacto() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Encabezado */}
-        <div className="mb-16 border-l-4 border-[#2563EB] pl-8">
-          <p className="text-xs font-bold tracking-[0.3em] uppercase text-[#2563EB] mb-2">
-            Disponibilidad
-          </p>
+        <div className="mb-16">
           <h1 className="text-5xl font-bold tracking-tight text-white">
             Contacto
           </h1>
@@ -149,7 +146,7 @@ export default function Contacto() {
                   },
                   {
                     tipo: "Consultoría Freelance",
-                    desc: "Control de obra, estimaciones, modelado BIM, dashboards y análisis de datos.",
+                    desc: "Control de obra, estimaciones, implementación BIM, dashboards y análisis de datos.",
                   },
                   {
                     tipo: "Proyectos por obra",

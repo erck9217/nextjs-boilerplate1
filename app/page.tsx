@@ -57,11 +57,6 @@ export default function Home() {
         </a>
       </div>
 
-      {/* Indicador scroll */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
-        <div className="w-px h-12 bg-gradient-to-b from-transparent to-[#64748B]" />
-        <p className="text-[10px] uppercase tracking-widest text-[#64748B]">Scroll</p>
-      </div>
     </div>
   );
 }

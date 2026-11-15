@@ -165,7 +165,7 @@ export const proyectos: Proyecto[] = [
     imagen: "/tanqueeleden.jpg",
     cliente: "Postensa",
     descripcion:
-      "Ampliación de 3,000 m² de losa en el centro comercial Galerías Valle Oriente, San Pedro Garza García, N.L. Coordinación de estructuras, instalaciones y acabados.",
+      "Residencia de obra en la franja de hotel de la ampliación de Galerías Valle Oriente: de la cimentación en sótano 4 a los colados de losa, con ciclos de 10 días por nivel de 1,000 m² y participación en ~3,000 m² de losa.",
     escala: "3,000 m² de losa",
     rol: "Residente de obra · ~40 personas",
     tipo: "Obra Privada",
