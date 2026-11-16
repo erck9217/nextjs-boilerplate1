@@ -161,7 +161,7 @@ export const proyectos: Proyecto[] = [
     slug: "ampliacion-galerias-valle-oriente",
     titulo: "Ampliación Galerías Valle Oriente",
     tag: "Obra Privada · 3,000 m²",
-    imagen: "/tanqueeleden.jpg",
+    imagen: "/proyectos/galerias-valle-oriente.jpg",
     cliente: "Postensa",
     descripcion:
       "Residencia de obra en la franja de hotel de la ampliación de Galerías Valle Oriente, en Monterrey, N.L.: de la cimentación en sótano 4 a los colados de losa, con ciclos de 10 días por nivel de 1,000 m² y participación en ~3,000 m² de losa.",
