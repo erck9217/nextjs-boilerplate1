@@ -47,9 +47,9 @@ export default function Proyectos() {
                   src={proyecto.imagen}
                   alt={proyecto.titulo}
                   fill
-                  className="object-cover opacity-50 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700 grayscale group-hover:grayscale-0"
+                  className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute top-4 left-4">
                   <span className="text-[10px] font-bold uppercase tracking-widest text-[#2563EB] bg-black/80 px-2 py-1">
                     {proyecto.tipo}
