@@ -68,7 +68,7 @@ export const proyectos: Proyecto[] = [
     slug: "linea-impulsion-el-salto-calderon",
     titulo: "Línea de Impulsión El Salto–Calderón",
     tag: "~$500M MXN · Jalisco",
-    imagen: "/acueductoguadalajara.jpg",
+    imagen: "/proyectos/el-salto-calderon.jpg",
     cliente: "CONAGUA",
     descripcion:
       "Línea de impulsión + tanque de cambio de régimen. Participación clave en licitación: volumetrías, análisis de costos y documentación técnica. Durante la ejecución, firma como superintendente y control de calidad, coordinado de forma remota.",
