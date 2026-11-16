@@ -33,7 +33,7 @@ export const proyectos: Proyecto[] = [
     slug: "acueducto-armeria-manzanillo",
     titulo: "Acueducto Armería–Manzanillo",
     tag: "42 KM · ~$900M MXN",
-    imagen: "/tanqueeleden.jpg",
+    imagen: "/proyectos/armeria-manzanillo.jpg",
     cliente: "ASIPONA",
     descripcion:
       "Construcción de acueducto nuevo de 42 km con tanque de almacenamiento. Proyecto de mayor escala personal: superintendencia de campo completa, toma de decisiones en sitio, cobro de extras y coordinación de equipos.",
