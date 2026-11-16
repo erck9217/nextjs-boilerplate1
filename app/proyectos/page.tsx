@@ -87,12 +87,12 @@ export default function Proyectos() {
                   </div>
                 </div>
 
-                {proyecto.ficha && (
+                {(proyecto.ficha || proyecto.galeria) && (
                   <Link
                     href={`/proyectos/${proyecto.slug}`}
                     className="mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#2563EB] hover:text-white transition-colors group/link"
                   >
-                    Ver caso completo
+                    {proyecto.ficha ? "Ver caso completo" : "Ver fotos"}
                     <span className="transition-transform group-hover/link:translate-x-1">→</span>
                   </Link>
                 )}

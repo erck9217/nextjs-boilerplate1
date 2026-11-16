@@ -50,18 +50,21 @@ NO es una single-page app con anclas — cada sección es una ruta propia.
   formación y certificaciones
 - `/proyectos` — Los 7 proyectos reales con imagen, escala, rol e impacto.
   Los 3 de mayor escala enlazan a su ficha ("Ver caso completo →")
-- `/proyectos/[slug]` — Ficha individual (SSG) de los 3 proyectos grandes,
-  con narrativa reto → decisiones → resultados. Slugs:
-  `acueducto-armeria-manzanillo`, `linea-impulsion-el-salto-calderon`,
-  `acueducto-cerro-prieto`
+- `/proyectos/[slug]` — Página individual (SSG) de cada proyecto, con
+  encabezado de foto real y galería "Fotos de obra". Los 3 grandes
+  (`acueducto-armeria-manzanillo`, `linea-impulsion-el-salto-calderon`,
+  `acueducto-cerro-prieto`) incluyen además la narrativa
+  reto → decisiones → resultados; el resto muestra datos básicos,
+  descripción y galería ("Ver fotos →")
 - `/servicios` — 5 especialidades con entregables + CTA al contacto
 - `/contacto` — Datos de contacto + formulario Formspree
 
 ### Datos de proyectos (fuente única)
 - `app/data/proyectos.ts` — array `proyectos` que alimenta tanto las
   tarjetas de `/proyectos` como las fichas `/proyectos/[slug]`.
-  Cada proyecto tiene `slug`, `imagen` (independiente) y opcionalmente
-  `ficha` (solo los 3 grandes). Editar contenido de proyectos SOLO aquí.
+  Cada proyecto tiene `slug`, `imagen` (portada), `galeria` (fotos de obra
+  con su pie) y opcionalmente `ficha` (solo los 3 grandes).
+  Editar contenido de proyectos SOLO aquí.
 
 ### Componentes compartidos (en app/components/)
 - `Header.tsx` — Fijo en la parte superior. Transparente en `/`, 
@@ -88,9 +91,10 @@ El `<main>` envuelve el `{children}`.
   330 lps y 250 HP, ~$100M MXN, participación administrativa de diseño
   a operación (obra distinta al acueducto)
 - Drenaje Pluvial Concepción Barragán (Mpio. Apodaca): ducto CR + tubería
-  aluminizada 84", ~$99M MXN, diseño completo en etapa SOP
+  aluminizada 84", ~$99M MXN, diseño completo en etapa SOP (Erick trabajaba
+  para el municipio supervisando contratistas, no para una constructora)
 - Puente Arroyo El Infiernillo (Mpio. Apodaca): ~$42M MXN,
-  administrativo + firma de superintendente
+  todo el control administrativo + firma como superintendente
 - Ampliación Galerías Valle Oriente (Postensa): 3,000 m² de losa,
   residente de obra, ~40 personas
 

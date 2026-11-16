@@ -1,5 +1,5 @@
 // Fuente única de verdad de proyectos.
-// Alimenta las tarjetas de /proyectos y las fichas /proyectos/[slug].
+// Alimenta las tarjetas de /proyectos y las páginas /proyectos/[slug].
 //
 // Convención de imágenes (Tarea 6):
 // Cuando existan fotos reales de obra, colocarlas en /public/proyectos/
@@ -14,6 +14,8 @@ export type FichaProyecto = {
   resultados: string[];
 };
 
+export type FotoProyecto = { src: string; alt: string };
+
 export type Proyecto = {
   slug: string;
   titulo: string;
@@ -24,6 +26,8 @@ export type Proyecto = {
   escala: string;
   rol: string;
   tipo: string;
+  // Fotos reales de obra que se muestran en la página del proyecto.
+  galeria?: FotoProyecto[];
   // Solo los 3 proyectos de mayor escala tienen ficha (caso completo).
   ficha?: FichaProyecto;
 };
@@ -34,6 +38,11 @@ export const proyectos: Proyecto[] = [
     titulo: "Acueducto Armería–Manzanillo",
     tag: "42 KM · ~$900M MXN",
     imagen: "/proyectos/armeria-manzanillo.jpg",
+    galeria: [
+      { src: "/proyectos/armeria-manzanillo.jpg", alt: "Cruce del acueducto junto al puente, toma de dron" },
+      { src: "/proyectos/armeria-manzanillo-2.jpg", alt: "Tanque de almacenamiento terminado, vista aérea" },
+      { src: "/proyectos/armeria-manzanillo-3.jpg", alt: "Montaje del equipo de bombeo" },
+    ],
     cliente: "ASIPONA",
     descripcion:
       "Construcción de acueducto nuevo de 42 km con tanque de almacenamiento. Proyecto de mayor escala personal: superintendencia de campo completa, toma de decisiones en sitio, cobro de extras y coordinación de equipos.",
@@ -69,6 +78,11 @@ export const proyectos: Proyecto[] = [
     titulo: "Línea de Impulsión El Salto–Calderón",
     tag: "~$500M MXN · Jalisco",
     imagen: "/proyectos/el-salto-calderon.jpg",
+    galeria: [
+      { src: "/proyectos/el-salto-calderon.jpg", alt: "Instalación de tubería y válvulas" },
+      { src: "/proyectos/el-salto-calderon-2.jpg", alt: "Tendido de la línea de impulsión" },
+      { src: "/proyectos/el-salto-calderon-3.jpg", alt: "Excavación junto al tanque" },
+    ],
     cliente: "CONAGUA",
     descripcion:
       "Línea de impulsión + tanque de cambio de régimen. Participación clave en licitación: volumetrías, análisis de costos y documentación técnica. Durante la ejecución, firma como superintendente y control de calidad, coordinado de forma remota.",
@@ -103,6 +117,11 @@ export const proyectos: Proyecto[] = [
     titulo: "Reforzamiento Acueducto Cerro Prieto",
     tag: '84" Acero · ~$200M MXN',
     imagen: "/proyectos/cerro-prieto.jpg",
+    galeria: [
+      { src: "/proyectos/cerro-prieto.jpg", alt: "Descarga de tubería de acero de 84 pulgadas" },
+      { src: "/proyectos/cerro-prieto-2.jpg", alt: "Maniobra de tubería junto a la zanja" },
+      { src: "/proyectos/cerro-prieto-3.jpg", alt: "Zanja excavada para la línea" },
+    ],
     cliente: "SADM",
     descripcion:
       "Reforzamiento de 4 km de tubería de acero de 2.13 m de diámetro. Infraestructura hidráulica crítica para el suministro de agua potable en la zona metropolitana de Monterrey.",
@@ -138,6 +157,11 @@ export const proyectos: Proyecto[] = [
     titulo: "Sistema de Bombeo Cerro Prieto",
     tag: "Bombeo · ~$100M MXN",
     imagen: "/proyectos/bombeo-cerro-prieto.jpg",
+    galeria: [
+      { src: "/proyectos/bombeo-cerro-prieto.jpg", alt: "Maniobra de una balsa de bombeo en la presa" },
+      { src: "/proyectos/bombeo-cerro-prieto-2.jpg", alt: "Líneas flotantes hacia las balsas de bombeo" },
+      { src: "/proyectos/bombeo-cerro-prieto-3.jpg", alt: "Termofusión de tubería de polietileno" },
+    ],
     cliente: "SADM",
     descripcion:
       "Sistema de bombeo flotante en la presa Cerro Prieto: 2 balsas con 3 bombas cada una, de 330 lps y 250 HP, con líneas de conducción flotantes hasta la orilla. Participación administrativa desde el diseño hasta la operación.",
@@ -150,9 +174,14 @@ export const proyectos: Proyecto[] = [
     titulo: "Drenaje Pluvial Concepción Barragán",
     tag: "Ducto CR · ~$99M MXN",
     imagen: "/proyectos/drenaje-concepcion-barragan.jpg",
+    galeria: [
+      { src: "/proyectos/drenaje-concepcion-barragan.jpg", alt: "Tubería aluminizada de 84 pulgadas en la llegada a estructura" },
+      { src: "/proyectos/drenaje-concepcion-barragan-2.jpg", alt: "Tendido de tubería por contratista, bajo supervisión del municipio" },
+      { src: "/proyectos/drenaje-concepcion-barragan-3.jpg", alt: "Tubería aluminizada colocada en zanja" },
+    ],
     cliente: "Municipio de Apodaca",
     descripcion:
-      'Diseño y proyecto ejecutivo completo del sistema de drenaje pluvial: ducto de concreto reforzado más tubería aluminizada de 84" de diámetro. Desarrollado en etapa de Secretaría de Obras Públicas.',
+      'Diseño y proyecto ejecutivo completo del sistema de drenaje pluvial: ducto de concreto reforzado más tubería aluminizada de 84" de diámetro. Proyecto desarrollado desde la Secretaría de Obras Públicas de Apodaca; la obra la ejecutó un contratista bajo supervisión del municipio.',
     escala: 'Ducto CR + tubería aluminizada 84"',
     rol: "Diseño completo (etapa SOP)",
     tipo: "Drenaje Pluvial",
@@ -162,11 +191,16 @@ export const proyectos: Proyecto[] = [
     titulo: "Puente Arroyo El Infiernillo",
     tag: "Obra Civil · ~$42M MXN",
     imagen: "/proyectos/puente-el-infiernillo.jpg",
+    galeria: [
+      { src: "/proyectos/puente-el-infiernillo.jpg", alt: "Colado de la losa del puente" },
+      { src: "/proyectos/puente-el-infiernillo-2.jpg", alt: "Armado de la losa" },
+      { src: "/proyectos/puente-el-infiernillo-3.jpg", alt: "Puente terminado" },
+    ],
     cliente: "Municipio de Apodaca",
     descripcion:
-      "Construcción de puente vehicular sobre Arroyo El Infiernillo en Apodaca, N.L. Control administrativo completo e intervención como firma de superintendente en etapas clave de la obra.",
+      "Construcción de puente vehicular sobre el Arroyo El Infiernillo en Apodaca, N.L. Llevé todo el control administrativo de la obra y firmé como superintendente.",
     escala: "~$42,000,000 MXN",
-    rol: "Administrativo + firma de superintendente",
+    rol: "Control administrativo + superintendente (firma)",
     tipo: "Obra Civil",
   },
   {
@@ -174,6 +208,10 @@ export const proyectos: Proyecto[] = [
     titulo: "Ampliación Galerías Valle Oriente",
     tag: "Obra Privada · 3,000 m²",
     imagen: "/proyectos/galerias-valle-oriente.jpg",
+    galeria: [
+      { src: "/proyectos/galerias-valle-oriente.jpg", alt: "Colado de losa en la franja de hotel" },
+      { src: "/proyectos/galerias-valle-oriente-2.jpg", alt: "Vista aérea del colado de losa" },
+    ],
     cliente: "Postensa",
     descripcion:
       "Residencia de obra en la franja de hotel de la ampliación de Galerías Valle Oriente, en Monterrey, N.L.: de la cimentación en sótano 4 a los colados de losa, con ciclos de 10 días por nivel de 1,000 m² y participación en ~3,000 m² de losa.",
