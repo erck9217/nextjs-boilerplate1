@@ -134,6 +134,18 @@ export const proyectos: Proyecto[] = [
     },
   },
   {
+    slug: "sistema-bombeo-cerro-prieto",
+    titulo: "Sistema de Bombeo Cerro Prieto",
+    tag: "Bombeo · ~$100M MXN",
+    imagen: "/proyectos/bombeo-cerro-prieto.jpg",
+    cliente: "SADM",
+    descripcion:
+      "Sistema de bombeo flotante en la presa Cerro Prieto: 2 balsas con 3 bombas cada una, de 330 lps y 250 HP, con líneas de conducción flotantes hasta la orilla. Participación administrativa desde el diseño hasta la operación.",
+    escala: "2 balsas · 6 bombas de 330 lps / 250 HP",
+    rol: "Participación administrativa · de diseño a operación",
+    tipo: "Sistema de Bombeo",
+  },
+  {
     slug: "drenaje-concepcion-barragan",
     titulo: "Drenaje Pluvial Concepción Barragán",
     tag: "Ducto CR · ~$99M MXN",

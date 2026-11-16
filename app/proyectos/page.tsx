@@ -29,17 +29,17 @@ export default function Proyectos() {
             Proyectos
           </h1>
           <p className="mt-4 text-[#64748B] max-w-xl">
-            Seis obras en las que he participado desde 2015: acueductos, drenaje pluvial,
+            Siete obras en las que he participado desde 2015: acueductos, bombeo, drenaje pluvial,
             un puente y obra privada, para SADM, CONAGUA, ASIPONA y el Municipio de Apodaca.
           </p>
         </div>
 
         {/* Grid de proyectos */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1E293B]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-l border-t border-[#1E293B]">
           {proyectos.map((proyecto) => (
             <div
               key={proyecto.slug}
-              className="group relative bg-[#000000] overflow-hidden flex flex-col"
+              className="group relative bg-[#000000] overflow-hidden flex flex-col border-r border-b border-[#1E293B]"
             >
               {/* Imagen */}
               <div className="relative h-64 overflow-hidden">

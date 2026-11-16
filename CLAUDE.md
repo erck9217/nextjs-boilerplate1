@@ -48,7 +48,7 @@ NO es una single-page app con anclas — cada sección es una ruta propia.
   subtítulo, dos botones (Ver proyectos / Contacto)
 - `/sobre-mi` — Perfil profesional, bio, stats, habilidades, 
   formación y certificaciones
-- `/proyectos` — Los 6 proyectos reales con imagen, escala, rol e impacto.
+- `/proyectos` — Los 7 proyectos reales con imagen, escala, rol e impacto.
   Los 3 de mayor escala enlazan a su ficha ("Ver caso completo →")
 - `/proyectos/[slug]` — Ficha individual (SSG) de los 3 proyectos grandes,
   con narrativa reto → decisiones → resultados. Slugs:
@@ -84,6 +84,9 @@ El `<main>` envuelve el `{children}`.
   calidad (coordinación remota)
 - Reforzamiento Acueducto Cerro Prieto (SADM): 4,000 ml tubería acero 84"
   (2.13 m diámetro), ~$200M MXN, responsable administrativo integral
+- Sistema de Bombeo Cerro Prieto (SADM): 2 balsas con 3 bombas c/u de
+  330 lps y 250 HP, ~$100M MXN, participación administrativa de diseño
+  a operación (obra distinta al acueducto)
 - Drenaje Pluvial Concepción Barragán (Mpio. Apodaca): ducto CR + tubería
   aluminizada 84", ~$99M MXN, diseño completo en etapa SOP
 - Puente Arroyo El Infiernillo (Mpio. Apodaca): ~$42M MXN,
