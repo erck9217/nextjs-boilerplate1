@@ -149,7 +149,7 @@ export const proyectos: Proyecto[] = [
     slug: "drenaje-concepcion-barragan",
     titulo: "Drenaje Pluvial Concepción Barragán",
     tag: "Ducto CR · ~$99M MXN",
-    imagen: "/cerrodelasilla.jpg",
+    imagen: "/proyectos/drenaje-concepcion-barragan.jpg",
     cliente: "Municipio de Apodaca",
     descripcion:
       'Diseño y proyecto ejecutivo completo del sistema de drenaje pluvial: ducto de concreto reforzado más tubería aluminizada de 84" de diámetro. Desarrollado en etapa de Secretaría de Obras Públicas.',
