@@ -102,7 +102,7 @@ export const proyectos: Proyecto[] = [
     slug: "acueducto-cerro-prieto",
     titulo: "Reforzamiento Acueducto Cerro Prieto",
     tag: '84" Acero · ~$200M MXN',
-    imagen: "/acueductomonterrey.jpeg",
+    imagen: "/proyectos/cerro-prieto.jpg",
     cliente: "SADM",
     descripcion:
       "Reforzamiento de 4 km de tubería de acero de 2.13 m de diámetro. Infraestructura hidráulica crítica para el suministro de agua potable en la zona metropolitana de Monterrey.",
