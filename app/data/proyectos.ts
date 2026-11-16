@@ -161,7 +161,7 @@ export const proyectos: Proyecto[] = [
     slug: "puente-el-infiernillo",
     titulo: "Puente Arroyo El Infiernillo",
     tag: "Obra Civil · ~$42M MXN",
-    imagen: "/cerrodelasilla.jpg",
+    imagen: "/proyectos/puente-el-infiernillo.jpg",
     cliente: "Municipio de Apodaca",
     descripcion:
       "Construcción de puente vehicular sobre Arroyo El Infiernillo en Apodaca, N.L. Control administrativo completo e intervención como firma de superintendente en etapas clave de la obra.",
